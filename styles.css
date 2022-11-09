@@ -8,6 +8,8 @@ html {
 }
 
 body {
+    position: relative;
+    z-index: 2;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -37,6 +39,8 @@ body {
 
 .img-bg {
     position: relative;
+    object-fit: cover;
+    object-position: 125% 0;
     z-index: 1;
     height: 50%;
     width: 50%;
