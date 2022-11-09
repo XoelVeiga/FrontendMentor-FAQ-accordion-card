@@ -2,3 +2,25 @@
     font-family: 'Kumbh Sans';
     src: url(fonts/KumbhSans-VariableFont_wght.ttf);
 }
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.card {
+    max-width: 32rem;
+    display: flex;
+    transition: 0.3s;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 3%;
+}
+
+.card:hover {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
