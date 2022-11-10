@@ -15,6 +15,7 @@ body {
     justify-content: center;
     height: 100%;
     align-items: center;
+    font-size: 15px;
     margin: 0;
     background-image: linear-gradient(to bottom right, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
@@ -23,10 +24,11 @@ body {
     width: 75rem;
     height: 40rem;
     margin-top: 50%;
-    display: inline-block;
+    display: flex;
     transition: 0.3s;
     background-color: hsl(0, 0%, 100%);
     border-radius: 5px;
+    padding: 30px;
 }
 
 .card:hover {
@@ -65,4 +67,51 @@ body {
     width: 15%;
     left: -53em;
     top: -47em;
+}
+
+.divider {
+    border-top: 1px solid hsl(240, 5%, 91%);
+}
+
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.icon {
+    width: 5%;
+}
+
+.accordion {
+    overflow: hidden;
+}
+
+.accordion-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    cursor: pointer;
+    color: hsl(237, 12%, 33%);
+}
+
+.accordion-content {
+    max-height: 0;
+    padding: 0 1em;
+    background: white;
+    transition: all 0.35s;
+    color: hsl(240, 6%, 50%);
+}
+
+input:checked~.accordion-content {
+    max-height: 100vh;
+    padding: 1em;
+}
+
+input:checked~.accordion-label {
+    font-weight: bold;
+}
+
+input:checked~.icon {
+    transform: rotate(180deg);
 }
