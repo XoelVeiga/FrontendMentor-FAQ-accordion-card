@@ -112,6 +112,6 @@ input:checked~.accordion-label {
     font-weight: bold;
 }
 
-input:checked~.icon {
+input:checked~.accordion-label .icon {
     transform: rotate(180deg);
 }
