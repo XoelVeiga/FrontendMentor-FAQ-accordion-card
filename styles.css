@@ -122,3 +122,57 @@ input:checked~.accordion-label {
 input:checked~.accordion-label .icon {
     transform: rotate(180deg);
 }
+
+@media only screen and (max-width: 800px) {
+    .card {
+        width: 360px;
+        height: 40rem;
+        display: block;
+        transition: 0.3s;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 5;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 15px 10px 0px;
+    }
+
+    .img-bg {
+        position: relative;
+        z-index: 1;
+        object-fit: cover;
+        height: 150px;
+        width: 270px;
+        left: 45px;
+        object-position: -0px -155px;
+    }
+
+    .img-woman {
+        position: absolute;
+        z-index: 2;
+        left: 50px;
+        top: -125px;
+        width: 270px;
+        object-position: 0px 0px;
+    }
+
+    .img-box {
+        position: absolute;
+        z-index: 3;
+        left: 40px;
+        top: -45px;
+        height: 105px;
+    }
+
+    .img {
+        position: relative;
+        height: 100px;
+    }
+
+    .accordion-group {
+        overflow: hidden;
+        margin-top: 30px;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+}
