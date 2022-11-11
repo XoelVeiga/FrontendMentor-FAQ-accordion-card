@@ -70,6 +70,8 @@ h1 {
 
 .col {
     width: 60%;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 input {
@@ -85,6 +87,7 @@ input {
 
 .accordion {
     overflow: hidden;
+    width: 100%;
 }
 
 .accordion-label {
@@ -105,7 +108,7 @@ input {
 
 input:checked~.accordion-content {
     max-height: 100vh;
-    padding: 1em;
+    padding: 16px;
 }
 
 input:checked~.accordion-label {
